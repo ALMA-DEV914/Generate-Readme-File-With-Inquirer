@@ -94,7 +94,7 @@ const inquirer = require('inquirer');
         }
     
         // set the variables for the readME
-        const fileName = 'GenerateReadMes\\ReadMe.md'
+        const fileName = 'GeneratedReadMe.md'
     
         // set the profile for the readME
         const profile = "https://github.com/" + response.gitHubUser
