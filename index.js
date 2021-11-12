@@ -108,7 +108,8 @@ const inquirer = require('inquirer');
     
         // set the profile for the readME
         const profile = "https://github.com/" + response.gitHubUser
-        const contribute = `https://www.contributor-covenant.org/ [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)`
+        const contribute = `(https://www.contributor-covenant.org/)
+        [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)`
         // create the total contents for the readME
       let readContents = `# ${response.title}
     This project is licensed under the ${licenseBadge}.
