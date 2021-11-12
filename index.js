@@ -59,11 +59,11 @@ const inquirer = require('inquirer');
             choices: [
               'MIT',
               'GNU',
+              'Apache 2.0',
               'None'
-            ]      }
-    
-    
-      ]
+            ]     
+          }
+      ];
     
       function generatePage() {
         inquirer.prompt(questions)
@@ -75,21 +75,30 @@ const inquirer = require('inquirer');
         {
           genLicense = fs.readFileSync('MIT.txt', 'utf-8')
           licenseBadge = `[![MIT License](https://img.shields.io/badge/license-${response.license}-blue.svg)](#license)`
-    
+           licenseLink = ` https://opensource.org/licenses/MIT`
         }
         else if (response.license == 'GNU')
         {
           // Use fs.readFileSync() method to read the file 
-          genLicense = fs.readFileSync('GNU.txt', 'utf8') 
+          genLicense = fs.readFileSync('GNU.txt', 'utf-8') 
     
           licenseBadge = `[![GNU License](https://img.shields.io/badge/license-${response.license}-blue.svg)](#license)`
-    
-            // Display the file content 
+          licenseLink = `https://opensource.org/licenses/GPL-3.0`
+            
         }
+        // if Apache 2.0 license
+        else if(response.license == 'Apache 2.0')
+        {
+          genLicense = fs.readFileSync('Apache.txt', 'utf-8')
+          licenseBadge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+          licenseLink = `https://opensource.org/licenses/Apache-2.0`
+
+        }
+        // Display the file content 
         else if(response.license == 'None')
         {
           genLicense = 'No license specified'
-          licenseBadge = `[![GNU License](https://img.shields.io/badge/license-${response.license}-blue.svg)](#license)`
+          licenseBadge = `https://choosealicense.com/(#license)`
     
         }
     
@@ -100,8 +109,9 @@ const inquirer = require('inquirer');
         const profile = "https://github.com/" + response.gitHubUser
     
         // create the total contents for the readME
-        let readContents = `# ${response.title}
-    This project is licensed under the ${licenseBadge} .
+      let readContents = `# ${response.title}
+    This project is licensed under the ${licenseBadge}.
+    This is the license link ${licenseLink}.
         
     ## Description:
     ${response.description}
@@ -118,17 +128,23 @@ const inquirer = require('inquirer');
         
     ## Installation
     ${response.install}
+
     ## Usage
     ${response.usage}
+
     ## License
    ${genLicense}
+  
     ## Contributing
     ${response.contribute}
+
     ## Tests
     ${response.test}
+    
     ## Questions
     For questions please contact: ${response.author}
     at  ${response.email}
+
     Github Profile: ${profile} `
     
     
