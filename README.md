@@ -19,7 +19,7 @@ Then after you answers all the questions, it will generate a string of data/resp
 After responses/answers were captured and saved, then it will create a Readme file like the image below. To check how the page looks like, you can view the file by right click and hit the 'open ' and boom! You have your Readme generated.
 <img width="1792" alt="Screen Shot 2021-11-08 at 8 14 47 AM" src="https://user-images.githubusercontent.com/65073138/140778514-fe10005e-1eca-4c73-b635-559dbf4baa20.png">
 
-After you check that file was created, go to your terminal and add, commit and push to your Github Repository. You can view the created file on [GeneratedReadMes\\ReadMe.md](https://github.com/ALMA-DEV914/README-Generator/blob/develop/GenerateReadMes%5CReadMe.md)
+After you check that file was created, go to your terminal and add, commit and push to your Github Repository. You can view the created file on [GeneratedReadMe.md](https://github.com/ALMA-DEV914/Readme-Generator/blob/main/GeneratedReadMe.md)
 
 <img width="1792" alt="Screen Shot 2021-11-08 at 8 17 15 AM" src="https://user-images.githubusercontent.com/65073138/140778541-155b21b6-83d4-4b06-b3ce-e57b80546570.png">
 
