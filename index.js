@@ -35,7 +35,7 @@ const inquirer = require('inquirer');
             type: 'input',
             message: 'How can people contribute?',
             name: 'contribute',
-            default: 'Check the guide link'
+            default: 'Check the link'
           },
           {
               type: 'input',
