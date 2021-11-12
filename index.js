@@ -55,14 +55,14 @@ const inquirer = require('inquirer');
             type: 'input',
             message: 'Provide information of application usage',
             name: 'usage',
-            default: 'See steps'
+            default: 'See the steps'
 
           },
           {
             type: 'input',
             message: 'How can people contribute?',
             name: 'contribute',
-            default: 'guidelines'
+            default: 'Read the guidelines'
           },
           {
               type: 'input',
@@ -143,10 +143,7 @@ const inquirer = require('inquirer');
     
         // set the profile for the readME
         const profile = "https://github.com/" + response.gitHubUser
-        //set link for contribution
-        const contribute = ` Read the guidelines at [Covenant Contributor](https://www.contributor-covenant.org/)
-
-        [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)`
+        
         // create the total contents for the readME
       let readContents = `# ${response.title}
     This project is licensed under the ${licenseBadge}.
@@ -170,6 +167,7 @@ const inquirer = require('inquirer');
 
     ## Usage
     ${response.usage}
+    Install node.js, download the file in your computer and open in VS code or terminal. Run node index.js and answer all the questions.
     ![See the steps](assets/images/step1.png)
     ![See the steps](assets/images/step2.png)
     ![See the steps](assets/images/step3.png)
@@ -177,7 +175,10 @@ const inquirer = require('inquirer');
    ${genLicense}
   
     ## Contributing
-    ${contribute}
+    ${response.contribute}
+    [Covenant Contributor](https://www.contributor-covenant.org/)
+
+    ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
     
     ## Tests
     ${response.test}
