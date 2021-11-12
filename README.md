@@ -66,7 +66,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
     
 ## Contributing<a name="contributing"></a>
-Check the link [Covenant Contributor](https://www.contributor-covenant.org)[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+Check the link [Covenant Contributor](https://www.contributor-covenant.org) 
+ 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 
 ## Tests<a name="tests"></a>

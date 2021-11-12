@@ -9,33 +9,59 @@ const inquirer = require('inquirer');
           type: 'input',
           message: "What's the title of your project?",
           name: 'title',
+          validate: titleInput => {
+            if (titleInput){
+              return true;
+            } else {
+              console.log("Please enter your project title!");
+              return false;
+            }
+          }
         },
         {
           type: 'input',
           message: "Add your name to the Readme",
           name: 'author',
+          validate: authorInput => {
+            if (authorInput){
+              return true;
+            } else {
+              console.log("Please enter your name!");
+              return false;
+            }
+          }
         },
         {
           type: 'input',
           message: "Write a description for your project",
           name: 'description',
+          validate: descriptionInput => {
+            if (descriptionInput){
+              return true;
+            } else {
+              console.log("Please enter the description of your project!");
+              return false;
+            }
+          }
         },
         {
           type: 'input',
           message: 'Write out installation instructions',
           name: 'install',
           default: 'npm init -y',
+      
         },
         {
             type: 'input',
             message: 'Provide information of application usage',
             name: 'usage',
+
           },
           {
             type: 'input',
             message: 'How can people contribute?',
             name: 'contribute',
-            default: 'Check the link'
+            default: 'guidelines'
           },
           {
               type: 'input',
@@ -47,6 +73,14 @@ const inquirer = require('inquirer');
             type: 'input',
             message: 'What is your GitHub username?',
             name: 'gitHubUser',
+            validate: githubInput => {
+              if (githubInput){
+                return true;
+              } else {
+                console.log("Please enter your github username!");
+                return false;
+              }
+            }
           },
           {
             type: 'input',
@@ -76,7 +110,7 @@ const inquirer = require('inquirer');
         {
           genLicense = fs.readFileSync('MIT.txt', 'utf-8')
           licenseBadge = `[![MIT License](https://img.shields.io/badge/license-${response.license}-blue.svg)](#license)`
-           licenseLink = ` https://opensource.org/licenses/MIT`
+          licenseLink = ` https://opensource.org/licenses/MIT`
         }
         else if (response.license == 'GNU')
         {
@@ -108,8 +142,9 @@ const inquirer = require('inquirer');
     
         // set the profile for the readME
         const profile = "https://github.com/" + response.gitHubUser
-        const contribute = `[Covenant Contributor](https://www.contributor-covenant.org/)
-        
+        //set link for contribution
+        const contribute = ` Read the ${response.contributing} at [Covenant Contributor](https://www.contributor-covenant.org/)
+
         [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)`
         // create the total contents for the readME
       let readContents = `# ${response.title}
@@ -139,7 +174,7 @@ const inquirer = require('inquirer');
    ${genLicense}
   
     ## Contributing
-    ${contribute}
+    ${response.authorcontribute}
     
     ## Tests
     ${response.test}
