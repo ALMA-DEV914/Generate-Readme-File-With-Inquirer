@@ -55,6 +55,7 @@ const inquirer = require('inquirer');
             type: 'input',
             message: 'Provide information of application usage',
             name: 'usage',
+            default: 'See steps'
 
           },
           {
@@ -143,7 +144,7 @@ const inquirer = require('inquirer');
         // set the profile for the readME
         const profile = "https://github.com/" + response.gitHubUser
         //set link for contribution
-        const contribute = ` Read the ${response.contributing} at [Covenant Contributor](https://www.contributor-covenant.org/)
+        const contribute = ` Read the guidelines at [Covenant Contributor](https://www.contributor-covenant.org/)
 
         [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)`
         // create the total contents for the readME
@@ -169,12 +170,14 @@ const inquirer = require('inquirer');
 
     ## Usage
     ${response.usage}
-
+    ![See the steps](assets/images/step1.png)
+    ![See the steps](assets/images/step2.png)
+    ![See the steps](assets/images/step3.png)
     ## License
    ${genLicense}
   
     ## Contributing
-    ${response.authorcontribute}
+    ${contribute}
     
     ## Tests
     ${response.test}
