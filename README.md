@@ -5,6 +5,8 @@ Alma Braun @2021
 <img alt="GitHub" src="https://img.shields.io/github/license/Alma-Dev914/Readme-Generator">
 
 Github Repository :[Github Repo](https://github.com/ALMA-DEV914/README-Generator)
+
+Walkthrough Video: 
         
 ## Description<a name="description"></a>
 This app will help you write or create a proffessional README file for your projects.
