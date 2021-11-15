@@ -92,11 +92,11 @@ renderLicenseLink();
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
    // set the variables for the readME
-   const fileName = 'GeneratedReadMe.md'
+   const fileName = 'GeneratedReadMe.md';
     
    // set the profile for the readME
-   const profile = "https://github.com/" + data.gitHubUser
-   
+   const profile = "https://github.com/" + data.gitHubUser;
+   const projectRepo = "https://github.com/" + data.gitHubUser/ + data.repoName;
    // create the contents for the readME
  return `# ${data.title}
 This project is licensed under the ${renderLicenseBadge(data.license)}.
@@ -138,7 +138,7 @@ ${data.contribute}
 
 ## Tests
 ${data.test}
-
+Git clone ${data.repoName}
 ## Questions
 For questions please contact: ${data.author}
 at  ${data.email}

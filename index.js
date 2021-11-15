@@ -59,10 +59,10 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 
           },
           {
-            type: 'input',
+            type: 'confirm',
             message: 'How can people contribute?',
             name: 'contribute',
-            default: 'Read the guidelines'
+            
           },
           {
               type: 'input',
