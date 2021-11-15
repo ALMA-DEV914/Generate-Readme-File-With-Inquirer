@@ -96,7 +96,7 @@ function generateMarkdown(data) {
     
    // set the profile for the readME
    const profile = "https://github.com/" + data.gitHubUser;
-   const projectRepo = "https://github.com/" + data.gitHubUser/ + data.repoName;
+  
    // create the contents for the readME
  return `# ${data.title}
 This project is licensed under the ${renderLicenseBadge(data.license)}.
@@ -138,7 +138,8 @@ ${data.contribute}
 
 ## Tests
 ${data.test}
-Git clone ${data.projectRepo}
+Git clone ${profile}
+
 ## Questions
 For questions please contact: ${data.author}
 at  ${data.email}
