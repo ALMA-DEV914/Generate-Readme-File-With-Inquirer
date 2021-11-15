@@ -6,7 +6,7 @@ Alma Braun @2021
 
 Github Repository :[Github Repo](https://github.com/ALMA-DEV914/README-Generator)
 
-Walkthrough Video: 
+Walkthrough Video: https://www.youtube.com/watch?v=Vlg_q26tq84
         
 ## Description<a name="description"></a>
 This app will help you write or create a proffessional README file for your projects.

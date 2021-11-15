@@ -6,7 +6,7 @@ This is the license link https://opensource.org/licenses/Apache-2.0.
  
 
 ## Description:
-It helps you to genearte a Readme file for your projects
+It helps you to generate a Readme file for your projects
    
    
 ## Table of contents
