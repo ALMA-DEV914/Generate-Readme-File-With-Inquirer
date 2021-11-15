@@ -138,7 +138,7 @@ ${data.contribute}
 
 ## Tests
 ${data.test}
-Git clone ${data.repoName}
+Git clone ${data.projectRepo}
 ## Questions
 For questions please contact: ${data.author}
 at  ${data.email}

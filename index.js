@@ -46,6 +46,11 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
         },
         {
           type: 'input',
+          message: "What is your project repository name?",
+          name: 'repoName'
+        },
+        {
+          type: 'input',
           message: 'Write out installation instructions',
           name: 'install',
           default: 'npm init -y',
@@ -60,7 +65,7 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
           },
           {
             type: 'confirm',
-            message: 'How can people contribute?',
+            message: 'Do you want to contribute?',
             name: 'contribute',
             
           },
