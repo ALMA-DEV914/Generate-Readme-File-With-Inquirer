@@ -1,12 +1,14 @@
-# Readme Generator
-This project is licensed under the [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0).
+# f
+This project is licensed under the 
+    [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0).
 
 This is the license link https://opensource.org/licenses/Apache-2.0.
-        
+ 
+
 ## Description:
-It helps you generate a Readme file
-        
-        
+s
+   
+   
 ## Table of contents
 * [Description](#description)
 * [Installation](#installation)
@@ -15,24 +17,25 @@ It helps you generate a Readme file
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-        
+   
 ## Installation
-npm init -y
+d
 
 ## Usage
-see steps
+s
+Install node.js, download the file in your computer and open in VS code or terminal. Run node index.js and answer all the questions.
 ![See the steps](assets/images/step1.png)
 ![See the steps](assets/images/step2.png)
 ![See the steps](assets/images/step3.png)
 
 ## License
-Apache License
-Version 2.0, January 2004
-http://www.apache.org/licenses/
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
 
-TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-1. Definitions.
+   1. Definitions.
 
       "License" shall mean the terms and conditions for use, reproduction,
       and distribution as defined by Sections 1 through 9 of this document.
@@ -227,17 +230,18 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-  
-    ## Contributing
-    Read the guidelines at [Covenant Contributor](https://www.contributor-covenant.org/)
 
-    [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
-    
-    ## Tests
-    npm test
+## Contributing
+s
+[Covenant Contributor](https://www.contributor-covenant.org/)
 
-    ## Questions
-    For questions please contact: Alma Braun
-    at  aungonalna58@gmail.com
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
-    Github Profile: https://github.com/Almita37 
+## Tests
+s
+
+## Questions
+For questions please contact: d
+at  
+
+Github Profile: https://github.com/s 
