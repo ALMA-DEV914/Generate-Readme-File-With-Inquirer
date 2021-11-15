@@ -29,11 +29,11 @@ Install node.js, download the file in your computer and open in VS code or termi
 ![See the steps](assets/images/step3.png)
 
 ## License
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
 
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
    1. Definitions.
 
@@ -208,8 +208,8 @@ Install node.js, download the file in your computer and open in VS code or termi
 
    APPENDIX: How to apply the Apache License to your work.
 
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
+   To apply the Apache License to your work, attach the following
+   boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -217,13 +217,13 @@ Install node.js, download the file in your computer and open in VS code or termi
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [yyyy] [name of copyright owner]
+  Copyright [2021] [Alma Braun]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -239,6 +239,7 @@ Read the guidelines at
 
 ## Tests
 npm test
+
 Git clone https://github.com/ALMA-DEV914
 
 ## Questions
