@@ -83,6 +83,7 @@ function renderLicenseSection(license) {
   }
   else if(license == "NONE"){
     genLicense =  "";
+    returm `${''}`
   }
 }
 renderLicenseSection();
@@ -138,6 +139,7 @@ ${data.contribute}
 
 ## Tests
 ${data.test}
+
 Git clone ${profile}
 
 ## Questions
@@ -146,4 +148,5 @@ at  ${data.email}
 
 Github Profile: ${profile} `
 }
+
 module.exports = generateMarkdown;
