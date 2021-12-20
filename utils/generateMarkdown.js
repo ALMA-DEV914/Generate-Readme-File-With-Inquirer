@@ -64,20 +64,20 @@ function renderLicenseSection(license) {
   // set the license depending on what was chosen
   if(license == 'MIT')
   {
-    genLicense = fs.readFileSync('MIT.txt', 'utf-8');
+    genLicense = fs.readFileSync('./licensepath/MIT.txt', 'utf-8');
     return `${genLicense}`
      
   }
   else if (license == 'GNU')
   {
     // Use fs.readFileSync() method to read the file 
-    genLicense = fs.readFileSync('GNU.txt', 'utf-8');
+    genLicense = fs.readFileSync('./licensepath/GNU.txt', 'utf-8');
     return `${genLicense}`
       // Display the file content 
   }
   else if(license == 'Apache 2.0')
   {
-    genLicense = fs.readFileSync('Apache.txt', 'utf-8')
+    genLicense = fs.readFileSync('./licensepath/Apache.txt', 'utf-8')
     return `${genLicense
     }`
   }
